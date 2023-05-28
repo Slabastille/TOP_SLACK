@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# TOP SLACK PHASE 1
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Team Members:
 
-## Available Scripts
+Samuel Labastille
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+**Vision:**
+Phase 1
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Slack App that creates a podium of the top three users in a slack channel with the most reactions on a message.
+  Phase 2
+- Slack App that creates a podium of the top three users in a slack channel who respond to the most message requests in a given channel. ie: ( it works channel, tools team channel)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Features:**
 
-### `npm test`
+- **MVP Features**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  - Time
 
-### `npm run build`
+    - Can select the time range of messages to look through
+      - 1 day
+      - 1 week
+      - 1 Month
+      - 1 Year
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - Message Count
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    - Can select the amount of messages to look through
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  - Channel
+    - [ ] User can select channel to look into
+    - [ ] User can add new channel to a database to look into
 
-### `npm run eject`
+- **Bonus Features**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Views
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Add Bonus views here
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Wireframes
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Add wireframes here
 
-## Learn More
+## Design
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Add database schemas
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Customize
 
-### Code Splitting
+Now that you've got the code, follow these steps to get acclimated:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Update project name and description in `package.json`, this is your database
 
-### Analyzing the Bundle Size
+## Start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Sync and seed your database by running `npm run seed`. Running `npm run start:dev` will make great things happen!
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- start:dev will both start your server and build your client side files using webpack
+- start:dev:logger is the same as start:dev, but you will see your SQL queries (can be helpful for debugging)
+- start:dev:seed will start your server and also seed your database (this is useful when you are making schema changes and you don't want to run your seed script separately)
